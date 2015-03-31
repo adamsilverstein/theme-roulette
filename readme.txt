@@ -1,10 +1,10 @@
 === Theme Roulette ===
-Contributors:      10up
+Contributors:      Adam Silverstein
 Donate link:       http://wordpress.org/plugins
 Tags:
 Requires at least: 3.9
 Tested up to:      3.9
-Stable tag:        0.1.0
+Stable tag:        0.1.2
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ Installs max 50 themes (over time) by default. Use the 'thmr_max_themes_to_insta
 
 Switches the theme 5 out of 10 loads (50 %) - adjust this setting with the 'thmr_times_to_switch_out_of_ten' filter.
 
-WARNING: The plugin may create additional load on your server, and may bring your site down if the activated theme throws a PHP error. Unlikely to happen with one of the top themes
+WARNING: The plugin may create additional load on your server, and may bring your site down if the activated theme throws a PHP error.  This is a novelty plugin, use at your own risk!
 
 == Installation ==
 
@@ -35,10 +35,10 @@ WARNING: The plugin may create additional load on your server, and may bring you
 
 == Changelog ==
 
-= 0.1.0 =
+= 0.1.2 =
 * First release
 
 == Upgrade Notice ==
 
-= 0.1.0 =
+= 0.1.2 =
 First Release
