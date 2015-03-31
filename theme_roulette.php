@@ -103,7 +103,7 @@ function thmr_maybe_change_theme() {
 			$theme_to_activate = $list_stylesheets[ $theme_index_to_activate ];
 			switch_theme( $theme_to_activate );
 
-			if ( ! current_user_can('install_themes') ) {
+			if ( ! current_user_can( 'install_themes' ) ) {
 				wp_die( __( 'You do not have sufficient permissions to install themes on this site.' ) );
 			}
 
@@ -221,6 +221,4 @@ register_deactivation_hook( __FILE__, 'thmr_deactivate' );
 // Wireup actions
 add_action( 'init', 'thmr_init' );
 
-// Wireup filters
 
-// Wireup shortcodes
