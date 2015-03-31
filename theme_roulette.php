@@ -136,7 +136,7 @@ function thmr_maybe_change_theme() {
 				 * Cache the remote api request.
 				 */
 				$themes_cache_key = 'themes_cache_key_' . THMR_VERSION;
-				if ( true || false === ( $all_the_themes = get_transient( $themes_cache_key ) ) ) {
+				if ( false === ( $all_the_themes = get_transient( $themes_cache_key ) ) ) {
 					$themes = themes_api( 'query_themes', $theme_query_options );
 					$all_the_themes = wp_list_pluck( $themes->themes, 'slug' );
 					set_transient( $themes_cache_key, $all_the_themes );
