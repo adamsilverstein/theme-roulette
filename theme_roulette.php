@@ -3,7 +3,7 @@
  * Plugin Name: Theme Roulette
  * Plugin URI:  http://wordpress.org/plugins
  * Description: A random theme at random times.
- * Version:     0.1.0
+ * Version:     0.1.2
  * Author:      Adam Silverstein
  * Author URI:
  * License:     GPLv2+
