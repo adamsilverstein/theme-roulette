@@ -39,7 +39,7 @@
 define( 'THMR_VERSION',  '0.1.2' );
 define( 'THMR_URL',      plugin_dir_url( __FILE__ ) );
 define( 'THMR_PATH',     dirname( __FILE__ ) . '/' );
-define( 'THMR_LOACLDEV', true );
+define( 'THMR_LOACLDEV', false );
 
 /**
  * Default initialization for the plugin:
@@ -49,6 +49,13 @@ function thmr_init() {
 	$locale = apply_filters( 'plugin_locale', get_locale(), 'thmr' );
 	load_textdomain( 'thmr', WP_LANG_DIR . '/thmr/thmr-' . $locale . '.mo' );
 	load_plugin_textdomain( 'thmr', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+
+	/**
+	 * Filter to skip on admin.
+	 */
+	if ( is_admin() && apply_filters( 'thmr_dont_show_on_admin', false ) ) {
+		return;
+	}
 
 	if ( THMR_LOACLDEV ){
 		$plugin_path = '//wpdev.localhost/wp-content/plugins/theme-roulette/assets/js/src/theme_roulette.js';
