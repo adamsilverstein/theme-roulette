@@ -60,7 +60,7 @@ function thmr_init() {
 	if ( THMR_LOACLDEV ){
 		$plugin_path = '//wpdev.localhost/wp-content/plugins/theme-roulette/assets/js/src/theme_roulette.js';
 	} else {
-		$plugin_path = plugins_url( __FILE__ ) . '/assets/js/src/theme_roulette.js';
+		$plugin_path = THMR_URL . '/assets/js/src/theme_roulette.js';
 	}
 
 	wp_enqueue_script(
