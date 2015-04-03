@@ -1,18 +1,17 @@
 <?php
 /*
 Plugin Name: Theme Roulette
-Plugin URI:  http://wordpress.org/plugins
+Plugin URI:  http://wordpress.org/plugins/theme-roulette
 Description: A random theme at random times.
-Version:     0.1.2
+Version:     0.1.3
 Author:      Adam Silverstein
-Author URI:
 License:     GPLv2+
 Text Domain: thmr
 Domain Path: /languages
 */
 
 // Useful global constants
-define( 'THMR_VERSION',  '0.1.2' );
+define( 'THMR_VERSION',  '0.1.3' );
 define( 'THMR_URL',      plugin_dir_url( __FILE__ ) );
 define( 'THMR_PATH',     dirname( __FILE__ ) . '/' );
 define( 'THMR_LOACLDEV', false );
