@@ -1,45 +1,21 @@
 <?php
-/**
- * Plugin Name: Theme Roulette
- * Plugin URI:  http://wordpress.org/plugins
- * Description: A random theme at random times.
- * Version:     0.1.2
- * Author:      Adam Silverstein
- * Author URI:
- * License:     GPLv2+
- * Text Domain: thmr
- * Domain Path: /languages
- */
-
-/**
- * Copyright (c) 2015 Adam Silverstein (email : adam@10up.com)
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License, version 2 or, at
- * your discretion, any later version, as published by the Free
- * Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
- */
-
-/**
- * Built using grunt-wp-plugin
- * Copyright (c) 2013 10up, LLC
- * https://github.com/10up/grunt-wp-plugin
- */
+/*
+Plugin Name: Theme Roulette
+Plugin URI:  http://wordpress.org/plugins
+Description: A random theme at random times.
+Version:     0.1.2
+Author:      Adam Silverstein
+Author URI:
+License:     GPLv2+
+Text Domain: thmr
+Domain Path: /languages
+*/
 
 // Useful global constants
 define( 'THMR_VERSION',  '0.1.2' );
 define( 'THMR_URL',      plugin_dir_url( __FILE__ ) );
 define( 'THMR_PATH',     dirname( __FILE__ ) . '/' );
-define( 'THMR_LOACLDEV', true );
+define( 'THMR_LOACLDEV', false );
 
 /**
  * Default initialization for the plugin:
@@ -50,10 +26,17 @@ function thmr_init() {
 	load_textdomain( 'thmr', WP_LANG_DIR . '/thmr/thmr-' . $locale . '.mo' );
 	load_plugin_textdomain( 'thmr', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
+	/**
+	 * Filter to skip on admin.
+	 */
+	if ( is_admin() && apply_filters( 'thmr_dont_show_on_admin', false ) ) {
+		return;
+	}
+
 	if ( THMR_LOACLDEV ){
 		$plugin_path = '//wpdev.localhost/wp-content/plugins/theme-roulette/assets/js/src/theme_roulette.js';
 	} else {
-		$plugin_path = plugins_url( __FILE__ ) . '/assets/js/src/theme_roulette.js';
+		$plugin_path = THMR_URL . '/assets/js/src/theme_roulette.js';
 	}
 
 	wp_enqueue_script(
