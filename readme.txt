@@ -1,5 +1,5 @@
 === Theme Roulette ===
-Contributors:      Adam Silverstein
+Contributors:      adamsilverstein
 Donate link:       http://wordpress.org/plugins
 Tags:
 Requires at least: 3.9
