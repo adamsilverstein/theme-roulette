@@ -15,7 +15,7 @@ jobs:
         node-version: '12.x'
     - name: Build
       run: |
-        sudo npm install -g grunt grunt-cli
+        sudo npm install -g grunt-cli
         grunt
     - name: WordPress Plugin Deploy
       uses: 10up/action-wordpress-plugin-deploy@master
