@@ -3,15 +3,15 @@
 Plugin Name: Theme Roulette
 Plugin URI:  http://wordpress.org/plugins/theme-roulette
 Description: A random theme at random times.
-Version:     0.1.5
+Version:     1.0.0
 Author:      Adam Silverstein
-License:     GPLv2+
+License:     MIT
 Text Domain: thmr
 Domain Path: /languages
 */
 
 // Useful global constants
-define( 'THMR_VERSION',  '0.1.5' );
+define( 'THMR_VERSION',  '1.0.0' );
 define( 'THMR_URL',      plugin_dir_url( __FILE__ ) );
 define( 'THMR_PATH',     dirname( __FILE__ ) . '/' );
 define( 'THMR_LOACLDEV', false );
@@ -139,7 +139,8 @@ function thmr_maybe_change_theme() {
 					 */
 					$theme_index_to_install = rand( 1, sizeof( $uninstalled_themes ) );
 					$theme_to_install       = $uninstalled_themes[ $theme_index_to_install ];
-					echo $theme_to_install;
+					$title                  = $theme_to_install;
+					$plugin                 = $theme_to_install;
 
 					$api = themes_api(
 								'theme_information',
@@ -202,5 +203,3 @@ register_deactivation_hook( __FILE__, 'thmr_deactivate' );
 
 // Wireup actions
 add_action( 'init', 'thmr_init' );
-
-
