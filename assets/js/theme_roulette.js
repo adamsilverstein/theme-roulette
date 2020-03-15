@@ -1,4 +1,6 @@
-/* global thmr_data */
+/*! Theme Roulette - v1.0.0
+ * http://wordpress.org/plugins
+ * Copyright (c) 2020; * Licensed GPLv2+ */
 /**
  * Theme Roulette
  * http://wordpress.org/plugins
