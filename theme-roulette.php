@@ -3,7 +3,7 @@
 Plugin Name: Theme Roulette
 Plugin URI:  http://wordpress.org/plugins/theme-roulette
 Description: A random theme at random times.
-Version:     1.0.0
+Version:     1.0.8
 Author:      Adam Silverstein
 License:     MIT
 Text Domain: thmr
@@ -11,7 +11,7 @@ Domain Path: /languages
 */
 
 // Useful global constants
-define( 'THMR_VERSION',  '1.0.0' );
+define( 'THMR_VERSION',  '1.0.8' );
 define( 'THMR_URL',      plugin_dir_url( __FILE__ ) );
 define( 'THMR_PATH',     dirname( __FILE__ ) . '/' );
 define( 'THMR_LOACLDEV', false );

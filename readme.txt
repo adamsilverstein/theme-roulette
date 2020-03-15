@@ -4,7 +4,7 @@ Donate link:       http://wordpress.org/plugins
 Tags:
 Requires at least: 3.9
 Tested up to:      5.5
-Stable tag:        1.0.0
+Stable tag:        1.0.8
 License:           MIT
 License URI:       https://opensource.org/licenses/MIT
 
