@@ -9,7 +9,7 @@
     "email": "adam@10up.com"
   },
   "devDependencies": {
-    "grunt": "~1.0.4",
+    "grunt": "~1.1.0",
     "grunt-contrib-concat": "~1.0.1",
     "grunt-contrib-uglify": "~4.0.1",
     "grunt-contrib-cssmin": "~3.0.0",
@@ -20,5 +20,8 @@
     "grunt-contrib-copy": "~1.0.0",
     "grunt-contrib-compress": "~1.6.0"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "npm-check-updates": "^4.1.0"
+  }
 }
