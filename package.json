@@ -20,8 +20,5 @@
     "grunt-contrib-copy": "~1.0.0",
     "grunt-contrib-compress": "~1.6.0"
   },
-  "keywords": [],
-  "dependencies": {
-    "npm-check-updates": "^4.1.0"
-  }
+  "keywords": []
 }
