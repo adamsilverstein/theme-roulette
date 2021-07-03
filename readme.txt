@@ -3,8 +3,8 @@ Contributors:      adamsilverstein
 Donate link:       http://wordpress.org/plugins
 Tags:
 Requires at least: 3.9
-Tested up to:      5.5
-Stable tag:        1.0.9
+Tested up to:      5.8
+Stable tag:        1.0.10
 License:           MIT
 License URI:       https://opensource.org/licenses/MIT
 
