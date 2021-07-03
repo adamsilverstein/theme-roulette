@@ -1,6 +1,6 @@
 /*! Theme Roulette - v1.0.0
  * http://wordpress.org/plugins
- * Copyright (c) 2020; * Licensed GPLv2+ */
+ * Copyright (c) 2021; * Licensed GPLv2+ */
 /**
  * Theme Roulette
  * http://wordpress.org/plugins
