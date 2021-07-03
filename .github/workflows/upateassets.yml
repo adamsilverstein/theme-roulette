@@ -2,15 +2,15 @@ name: Asset update
 on:
   push:
     branches:
-    - master
+    - main
 jobs:
-  master:
-    name: Push to master
+  main:
+    name: Push to main
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@latest
     - name: WordPress.org asset update
-      uses: 10up/action-wordpress-plugin-asset-update@master
+      uses: 10up/action-wordpress-plugin-asset-update@latest
       env:
         SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
-        SVN_USERNAME: ${{ secrets.SVN_USERNAME }} 
+        SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
