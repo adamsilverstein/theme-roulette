@@ -3,7 +3,7 @@
 Plugin Name: Theme Roulette
 Plugin URI:  http://wordpress.org/plugins/theme-roulette
 Description: A random theme at random times.
-Version:     1.0.10
+Version:     1.0.11
 Author:      Adam Silverstein
 License:     MIT
 Text Domain: thmr
@@ -137,7 +137,8 @@ function thmr_maybe_change_theme() {
 					/**
 					 * Randomly select one of the remaining themes and install.
 					 */
-					$theme_index_to_install = rand( 1, sizeof( $uninstalled_themes ) );
+					$uninstalled_themes     = array_values( $uninstalled_themes );
+					$theme_index_to_install = rand( 0, sizeof( $uninstalled_themes ) - 1 );
 					$theme_to_install       = $uninstalled_themes[ $theme_index_to_install ];
 					$title                  = $theme_to_install;
 					$plugin                 = $theme_to_install;
