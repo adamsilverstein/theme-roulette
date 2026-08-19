@@ -48,6 +48,7 @@ Enable, enjoy!
 
 = 1.0.11 =
 * Confirm compatibility with WordPress 7.1.
+* Fix an "Undefined array key" warning when picking a theme to install. `array_diff()` preserves the original keys, so the randomly chosen index often did not exist.
 
 = 0.1.4 =
 * Fix authorship
