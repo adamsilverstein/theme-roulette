@@ -3,8 +3,8 @@ Contributors:      adamsilverstein
 Donate link:       http://wordpress.org/plugins
 Tags:
 Requires at least: 3.9
-Tested up to:      5.8
-Stable tag:        1.0.10
+Tested up to:      7.1
+Stable tag:        1.0.11
 License:           MIT
 License URI:       https://opensource.org/licenses/MIT
 
@@ -45,6 +45,9 @@ Enable, enjoy!
 
 
 == Changelog ==
+
+= 1.0.11 =
+* Confirm compatibility with WordPress 7.1.
 
 = 0.1.4 =
 * Fix authorship
