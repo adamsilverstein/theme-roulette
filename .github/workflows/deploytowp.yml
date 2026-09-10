@@ -2,10 +2,12 @@ name: Deploy to WordPress.org
 on:
   release:
     types: [published]
+  workflow_dispatch:
 jobs:
   tag:
     name: Release
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
     - uses: actions/checkout@v4
     - name: WordPress Plugin Deploy
