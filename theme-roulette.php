@@ -11,7 +11,7 @@ Domain Path: /languages
 */
 
 // Useful global constants
-define( 'THMR_VERSION',  '1.0.10' );
+define( 'THMR_VERSION',  '1.0.11' );
 define( 'THMR_URL',      plugin_dir_url( __FILE__ ) );
 define( 'THMR_PATH',     dirname( __FILE__ ) . '/' );
 define( 'THMR_LOACLDEV', false );
