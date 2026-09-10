@@ -35,7 +35,8 @@ phpcs.xml
 phpunit.xml
 README.md
 webpack.config.js
-webpack.gutenberg.config.js/Gruntfile.js
+webpack.gutenberg.config.js
+/Gruntfile.js
 /deploy.sh
 /.distignore
 /.dist-ignore
