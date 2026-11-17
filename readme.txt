@@ -4,7 +4,7 @@ Donate link:       http://wordpress.org/plugins
 Tags:
 Requires at least: 3.9
 Tested up to:      7.2
-Stable tag:        1.0.11
+Stable tag:        1.0.12
 License:           MIT
 License URI:       https://opensource.org/licenses/MIT
 
@@ -45,6 +45,10 @@ Enable, enjoy!
 
 
 == Changelog ==
+
+= 1.0.12 =
+* Confirm compatibility with WordPress 7.2.
+* Leave development files out of the plugin package.
 
 = 1.0.11 =
 * Confirm compatibility with WordPress 7.1.
